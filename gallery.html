@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aditya Ajith</title>
+    <style>
+        body {
+            font-family: "Orbitron", sans-serif; /* Futuristic font */
+            background-color: #0a0f1f; /* Dark background */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent card */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+        }
+        h1 {
+            color: #00eaff; /* Neon blue */
+            font-size: 32px;
+            border-bottom: 2px solid #00eaff;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts columns dynamically */
+            gap: 20px;
+            margin-top: 30px;
+            padding: 0 20px;
+            justify-content: center; /* Centers the last row if there's an odd image */
+        }
+        .gallery img {
+            width: 100%;
+            height: 300px; /* Maintains uniform height */
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5); /* Soft neon glow */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.8);
+        }
+        .caption {
+            font-size: 16px;
+            color: #00eaff;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+        .navigation {
+            margin-top: 30px;
+        }
+        .navigation a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background: #00eaff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin: 0 15px;
+            transition: 0.3s;
+            border: 2px solid #00eaff;
+        }
+        .navigation a:hover {
+            background-color: transparent;
+            color: #00eaff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>A visual journey through my life.</p>
+
+        <div class="gallery">
+            <div>
+                <img src="Solo.jpg" alt="Solo Picture">
+                <p class="caption">Embracing challenges with confidence.</p>
+            </div>
+            <div>
+                <img src="Family.jpg" alt="Family Picture">
+                <p class="caption">The foundation of leadership starts at Family.</p>
+            </div>
+            <div>
+                <img src="Travel.jpg" alt="Travel Adventure">
+                <p class="caption">Like the vast ocean, a true leader embraces endless possibilities and charts a course to success.</p>
+            </div>
+	     <div>
+                <img src="Cowboy.jpg" alt="Travel Adventure">
+                <p class="caption">A great leader, like a cowboy, is always exploring new frontiers and guiding the team to uncharted success..</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="index.html">⬅ Back to Home</a>
+        <a href="hobbies.html">Next Page ➡</a>
+    </div>
+
+</body>
+</html>
